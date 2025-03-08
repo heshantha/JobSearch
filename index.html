@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Job Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container mt-4">
+  <h1 class="mb-4">Vacancies</h1>
+  <div class="row g-2">
+    <div class="col-md-3">
+        <input type="text" id="search-job-title" class="form-control" placeholder="Job Title"/>
+    </div>
+    <div class="col-md-3">
+        <input type="text" id="search-location" class="form-control" placeholder="Location"/>
+    </div>
+    <div class="col-md-2">
+ <div class="custom-dropdown">
+    <button class="btn btn-light dropdown-toggle" id="dropdownBtn">Field (0)</button>
+    <div class="dropdown-content p-2">
+        <label><input type="checkbox" class="multi-select" value="Engineering"> Engineering </label><br>
+        <label><input type="checkbox" class="multi-select" value="Marketing"> Marketing</label><br>
+        <label><input type="checkbox" class="multi-select" value="Sales"> Sales</label><br>
+        <label><input type="checkbox" class="multi-select" value="Finance"> Finance</label><br>
+    </div>
+</div>
+    </div>
+  </div>
+  <div class="row g-2">
+    <div class="filter-tags">
+        <div id="selectedOptions" class="p-2 "></div>
+    </div>
+  </div>
+  <div class="row g-2">
+    <div class="filter-tags">
+
+    </div>
+    <span>Luba has 43 suitable vacancies for you </span>
+  <button class="btn-btn-outline-primary mt-3"><i class="material-icons">notifications</i> Turn on vacancy alert</button>
+  <div></div>
+  <div>
+
+  </div>
+</div>
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card p-3 mb-3">
+            <h2 class="h5">Software Enginner</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <ul class="list-unstyled">
+                <li><i class="material-icons">outgoing_mail</i> €2900 - €3100 per month</li>
+                <li><i class="material-icons">pin_drop</i> Maasdijk</li>
+                <li><i class="material-icons">alarm_on</i> 38 to 40 hours</li>
+                <li><i class="material-icons">edit_document</i> Fixed</li>
+                <li><i class="material-icons">task</i> Mbo</li>
+            </ul>
+            <div class="bottom-block">
+                <button class="btn btn-primary">View Vacancy</button>
+                <button class="btn btn-secondary"><i class="material-icons">favorite</i></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div id="map-container" class="mt-3 p-3 border" >Map</div>
+    </div>
+
+</div>
+</div>
+
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
